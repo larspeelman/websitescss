@@ -20,9 +20,8 @@
             </div>
         </div>
     </header>
-
-    <nav class="Nav-Bar container">
-        <ul class=Main-Nav>
+    <nav class="Nav-Bar container navbar-header">
+        <ul class=Main-Nav navbar-right>
             <li><a href="default.asp">Home</a></li>
             <li><a href="news.asp">Examples</a></li>
             <li><a href="contact.asp">A Page</a></li>
@@ -45,27 +44,27 @@
                     <h4>Heading 4</h4>
                     <h5>Heading 5</h5>
                     <h6>Heading 6</h6>
-                    <h1>Text</h1>
+                    <h1 class="red-heading">Text</h1>
                     <p>The following examples show how the text (within '&lt;p&gt;&lt;/p&gt;' tags) will appear.</p>
                     <p><strong>this is an example of a bold text</strong></p>
                     <p><i>Thus is an example of italic text</i></p>
                     <a href="http://">This is a hyperlink</a>
-                    <h1>Lists</h1>
+                    <h1 class="red-heading">Lists</h1>
                     <p>This is an unordered list:</p>
-                    <li>
-                        <ul>item 1</ul>
-                        <ul>Item 2</ul>
-                        <ul>Item 3</ul>
-                        <ul>Item 4</ul>
-                    </li>
+                    <ul class="ordered-list">
+                        <li>item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
                     <p>This is an ordered list:</p>
-                    <li>
-                        <ol>Item 1</ol>
-                        <ol>Item 2</ol>
-                        <ol>Item 3</ol>
-                        <ol>Item 4</ol>
-                    </li>
-                    <h1>Images</h1>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ol>
+                    <h1 class="red-heading">Images</h1>
                     <p>Images can be placced on the left, in the center or on the right:</p>
                     <img src="" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor quibusdam doloribus dolorem? Eveniet,
@@ -75,31 +74,31 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae dolorum, expedita rem voluptatibus
                         saepe esse aliquid consequuntur voluptatem tempore nobis culpa natus qui laudantium? Perspiciatis
                         fugit hic quo ipsam!</p>
-                    <h1>Tables</h1>
+                    <h1 class="red-heading">Tables</h1>
                     <p>Tables should be used to display data and not used for laying out your website</p>
-                    <table>
+                    <table class="table table-bordered">
                         <tr>
-                            <th>Item</th>
-                            <th>Description</th>
+                            <th class="top-table-row">Item</th>
+                            <th class="top-table-row">Description</th>
                         </tr>
                         <tr>
-                            <td>Item 1</td>
-                            <td>Description of item 1</td>
+                            <td class="table-row">Item 1</td>
+                            <td class="table-row">Description of item 1</td>
                         </tr>
                         <tr>
-                            <td>Item 2</td>
-                            <td>Description of item 2</td>
+                            <td class="table-row">Item 2</td>
+                            <td class="table-row">Description of item 2</td>
                         </tr>
                         <tr>
-                            <td>Item 3</td>
-                            <td>Description of item 3</td>
+                            <td class="table-row">Item 3</td>
+                            <td class="table-row">Description of item 3</td>
                         </tr>
                         <tr>
-                            <td>Item 4</td>
-                            <td>Description of item 4</td>
+                            <td class="table-row">Item 4</td>
+                            <td class="table-row">Description of item 4</td>
                         </tr>
                     </table>
-                    <h1>Form Elements</h1>
+                    <h1 class="red-heading">Form Elements</h1>
                     <form action="" method="get" class="form-example">
                         <div class="form-example">
                             <label for="example">Form field example </label>
@@ -122,22 +121,26 @@
                             </select>
                         </div>
                     </form>
-                    <a href="#" class="Main-Button">Button</a>
+                    <button type="button" class="btn btn-primary -btn-lg sharp">Button</button>
                 </div>
             </section>
             <div class="col-sm-4">
-                <aside>
-                    <h2>Latest News</h2>
-                    <h3>New Website Launched</h3>
-                    <p>January 1st, 2018</p>
-                    <p>2018 Sees the redesign if our website.....</p> <a href="http://latest news">Read more</a>
-                </aside>
+                <div class="latest-news">
+                    <aside>
+                        <h2>Latest News</h2>
+                        <h3 class="red-heading">New Website Launched</h3>
+                        <p>January 1st, 2018</p>
+                        <p>2018 Sees the redesign if our website.....</p> <a href="http://latest news">Read more</a>
+                    </aside>
+                </div>
                 <aside>
                     <h3>useful Links</h3>
-                    <a href="http://latest news">Link 1</a>
-                    <a href="http://latest news">Link 2</a>
-                    <a href="http://latest news">Link 3</a>
-                    <a href="http://latest news">Link 4</a>
+                    <ul class="usefull-links">
+                        <li><a href="http://latest news">Link 1</a></li>
+                        <li> <a href="http://latest news">Link 2</a></li>
+                        <li> <a href="http://latest news">Link 3</a></li>
+                        <li><a href="http://latest news">Link 4</a></li>
+                    </ul>
                 </aside>
                 <aside>
                     <h3>Search</h3>

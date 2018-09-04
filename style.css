@@ -37,19 +37,26 @@ ul{
 .Main-Nav a{
     list-style-type: none;
     display: block;
-    background-color: black;
-    border-radius: 10%;
+    background-color: #696969;
+    border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 1px;
-    color: white;   
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;   
+    text-align: center;
+}
+.Main-Nav li :hover{
+    background-color: lightgray;
 }
 
 
+
 .Nav-Bar{
-    list-style-type: none;
+    text-decoration: none;
 
 }
 
@@ -65,16 +72,61 @@ ul{
 .main-section{
     /*margin-top: 10px;*/
 }
-.Main-Button{
-    text-decoration: none;
-    padding: 8px 30px 8px 30px;
-    background-color: black;
-    color: white;
-    transition: 0.3s;
-   
+
+.btn{
+    display: inline-block;
+    padding: 6px 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
 }
 
-.Main-Button :hover{
-    background-color: white;
+.btn-primary{
+    background-color: black;
+    color: white;
+}
+
+.btn-primary:hover,
+.open .dropdown-toggle.btn-primary{
+    background-color: lightgray;
+    color: white;
+}
+
+.top-table-row{
+    background-color: black;
+    color: white;
+}
+
+.table-row{
+    background-color: lightgray;
     color: black;
+}
+.red-heading{
+    color: red;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.ordered-list{
+    margin-left: 40px;
+}
+
+.latest-news{
+    margin: 0;
+}
+
+.Nav-Bar container{
+    background-color: none !important;
+}
+
+.usefull-links{
+    list-style-type: none;
+    margin-left: 40px;
 }
